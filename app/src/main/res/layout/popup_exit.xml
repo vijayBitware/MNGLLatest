@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popup_bkg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txt_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center|left"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:text="Ok"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:gravity="center"
+                    android:id="@+id/btn_yes"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:text="Cancel"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:gravity="center"
+                    android:id="@+id/btn_no"/>
+            </LinearLayout>
+             <View
+                 android:layout_width="1dp"
+                 android:layout_height="25dip"
+                 android:layout_gravity="center"
+                 android:background="@color/line_colour" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

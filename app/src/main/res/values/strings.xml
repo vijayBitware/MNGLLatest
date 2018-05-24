@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">MNGL</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_profile">My Profile</string>
+    <string name="nav_revisiting">Revisiting Customers</string>
+    <string name="nav_history">History</string>
+    <string name="nav_oflinedata">Offline Records</string>
+    <string name="nav_logout">Logout</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_monthly_record">Monthly Record</string>
+
+    <string-array name="navDrawerItems">
+        <item>@string/nav_home</item>
+        <item>@string/nav_profile</item>
+        <item>@string/nav_revisiting</item>
+        <item>@string/nav_history</item>
+        <item>@string/nav_oflinedata</item>
+        <item>@string/nav_monthly_record</item>
+        <item>@string/nav_logout</item>
+    </string-array>
+
+    <string name="popup_txt">Are you sure you want to exit?</string>
+    <string name="error_username">Please enter username</string>
+    <string name="error_password">Please enter password</string>
+    <string name="error_pwd_length">Please enter min 6 characters password</string>
+    <string name="no_internet">Please check your internet connection</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

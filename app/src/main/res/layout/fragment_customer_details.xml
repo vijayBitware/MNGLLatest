@@ -1,0 +1,298 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context="com.mngl.view.fragment.CustomerDetailsFragment">
+    <!-- TODO: Update blank fragment layout -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:src="@mipmap/ic_left_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="40dp"
+            android:text="Customer Deatils"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/line_colour" />
+
+            <TextView
+                android:id="@+id/txtMruNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="KOT003_E"
+                android:textColor="@color/colorPrimary"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtBpNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="#0050018167"
+                android:textColor="@color/colorPrimary"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtCustomerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Sachin Joshi"
+                android:textColor="@color/colorPrimary"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtCustomerAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="A1, Lorem Ipsum is simply dummy text of the printing and typecasting industry."
+                android:textColor="@color/txt_colour"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtCustomerPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="9823421986"
+                android:textColor="@color/txt_colour"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtTotalAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Total Amount : Rs. 912.00"
+                android:textColor="@color/colorPrimary"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:id="@+id/frameMeter"
+                android:layout_width="match_parent"
+                android:layout_height="160dip"
+                android:layout_marginTop="10dp"
+                android:background="@color/profile_bkg"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/imgMeter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/imgLeftBracket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_left_bracket" />
+
+                <ImageView
+                    android:id="@+id/imgRightBracket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_right_bracket" />
+
+                <ImageView
+                    android:id="@+id/imgCapture"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:src="@mipmap/photo_camera" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dip"
+                    android:layout_gravity="bottom"
+                    android:background="@color/bkg_trans">
+
+                    <TextView
+                        android:id="@+id/txtMeterNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|left"
+                        android:layout_marginLeft="10dp"
+                        android:text="RAY12275557"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/txtBPNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|end"
+                        android:layout_marginRight="10dp"
+                        android:text="RAY12275557"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp" />
+                </FrameLayout>
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Enter Meter Reading"
+                android:textColor="@color/colorPrimary"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/edtMeterReading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield_style"
+                android:inputType="number"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="MR Note : "
+                android:textColor="@color/colorPrimary"
+                android:textSize="17sp" />
+
+            <Spinner
+                android:id="@+id/spMrNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"></Spinner>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/line_colour" />
+
+            <LinearLayout
+                android:id="@+id/linearMeterNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Enter Meter Number"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/edtMeterNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/editfield_style"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Comment"
+                android:textColor="@color/colorPrimary"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/edtComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield_style"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/btnSave"
+                    android:layout_width="0dip"
+                    android:layout_height="45dip"
+                    android:layout_weight=".45"
+                    android:background="@drawable/btn_blue"
+                    android:text="SAVE DETAILS"
+                    android:textColor="@color/white" />
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1" />
+
+                <Button
+                    android:id="@+id/btnNotAvailable"
+                    android:layout_width="0dip"
+                    android:layout_height="45dip"
+                    android:layout_weight=".45"
+                    android:background="@drawable/btn_blue"
+                    android:text="NOT AVAILABLE"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

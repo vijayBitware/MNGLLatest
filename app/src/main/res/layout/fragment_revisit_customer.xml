@@ -1,0 +1,194 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:weightSum="1"
+    tools:context="com.mngl.view.fragment.CustomerDetailsFragment">
+    <!-- TODO: Update blank fragment layout -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight=".08">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:src="@mipmap/ic_left_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="40dp"
+            android:text="Revisit Deatils"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight=".8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/line_colour" />
+            <!--<FrameLayout
+                android:id="@+id/frameMeter"
+                android:layout_width="match_parent"
+                android:layout_height="160dip"
+                android:layout_marginTop="10dp"
+                android:background="@color/profile_bkg"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/imgMeter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/imgCapture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/photo_camera" />
+            </FrameLayout>-->
+            <FrameLayout
+                android:id="@+id/frameMeter"
+                android:layout_width="match_parent"
+                android:layout_height="160dip"
+                android:layout_marginTop="10dp"
+                android:background="@color/profile_bkg"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/imgMeter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_left_bracket" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_right_bracket" />
+
+                <ImageView
+                    android:id="@+id/imgCapture"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/photo_camera" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dip"
+                    android:layout_gravity="bottom"
+                    android:background="@color/bkg_trans">
+
+                    <TextView
+                        android:id="@+id/txtMeterNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|left"
+                        android:layout_marginLeft="10dp"
+                        android:text="RAY12275557"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/txtBPNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_marginRight="10dp"
+                        android:text="RAY12275557"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp" />
+                </FrameLayout>
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="MR Note : "
+                android:textColor="@color/colorPrimary"
+                android:textSize="17sp" />
+
+            <Spinner
+                android:id="@+id/spReason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"></Spinner>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/line_colour" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Comment"
+                android:textColor="@color/colorPrimary"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/edtComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editfield_style"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="10dp"
+        android:layout_weight=".15"
+        android:padding="5dp"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:background="@drawable/btn_blue"
+            android:text="SAVE DETAILS"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>
